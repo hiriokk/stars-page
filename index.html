@@ -4,15 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Найяскравіші зірки</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Найяскравіші зорі - Путівник нічним небом</title>
+
+    <meta name="description"
+        content="Дізнайтеся про найяскравіші зорі нічного неба, їхню видиму зоряну величину, відстань від Землі та спектральні класи.">
+
+    <meta name="keywords"
+        content="найяскравіші зорі, Сіріус, Канопус, зоряна величина, спектральні класи, астрономія, нічне небо">
+
+    <meta name="author" content="Канюга Денис">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
     <header class="site-header">
         <div class="container">
             <a href="#" class="logo">Найяскравіші зірки</a>
-            <nav>
+            <nav aria-label="Головне меню сайту">
                 <ul class="nav-menu">
                     <li><a href="#about">Про тему</a></li>
                     <li><a href="#stars">Найяскравіші зорі</a></li>
@@ -23,176 +33,208 @@
         </div>
     </header>
 
-    <div class="container">
-        <section class="card" id="about">
-            <p class="intro">
-                Дивлячись на нічне небо, ми бачимо тисячі
-                світлих крапок, але не багато з них сяють
-                настільки яскраво, що їх можна побачити
-                в освітлених вулицях. На цьому сайті можна
-                побачити <strong class="highlight">найяскравіші зорі</strong>,
-                які видно із Землі.
-            </p>
-        </section>
+    <main id="main-content">
+        <div class="container">
 
-        <section class="card" id="features">
-            <h3 class="section-title">Що таке зоряна величина</h3>
-            <p>
-                Яскравість зірок астрономи вимірюють за допомогою
-                <em class="highlight">видимої зоряної величини</em> —
-                чим менше це число, тим яскравіша зірка.
-            </p>
-        </section>
+            <section id="about">
+                <h2 class="section-title">Про найяскравіші зорі</h2>
+                <article class="card">
+                    <p class="intro">
+                        Дивлячись на нічне небо, ми бачимо тисячі
+                        світлих крапок, але не багато з них сяють
+                        настільки яскраво, що їх можна побачити
+                        в освітлених вулицях. На цьому сайті можна
+                        побачити <strong class="highlight">найяскравіші зорі</strong>,
+                        які видно із Землі.
+                    </p>
+                </article>
+            </section>
 
-        <section class="card featured" id="stars">
-            <span class="badge">ХІТ</span>
+            <section id="features">
+                <h2 class="section-title">Що таке зоряна величина</h2>
+                <article class="card">
+                    <p>
+                        Яскравість зірок астрономи вимірюють за допомогою
+                        <em class="highlight">видимої зоряної величини</em> -
+                        чим менше це число, тим яскравіша зірка.
+                    </p>
 
-            <h2 class="section-title">Топ найяскравіших зірок</h2>
-            <p>
-                Найяскравішою зіркою нічного неба
-                <em>(не рахуючи Сонця)</em> є
-                <strong class="highlight">Сіріус</strong> —
-                вона розташована у сузір'ї Великого Пса.
-                Друге місце займає Канопус, а третє —
-                Альфа Центавра, найближча до нас зоряна система.
-            </p>
+                    <aside class="aside-info">
+                        <h3>Цікавий факт</h3>
+                        <p>
+                            Сонце має видиму зоряну величину приблизно -26,74.
+                            Це набагато яскравіше за Сіріус, який має величину -1,46.
+                        </p>
+                    </aside>
+                </article>
+            </section>
 
-            <div class="main-img">
-                <img src="Sirius.jpeg" alt="Сіріус у порівнянні з Сонцем">
-            </div>
-        </section>
+            <section id="stars">
+                <h2 class="section-title">Топ найяскравіших зірок</h2>
+                <article class="card featured">
+                    <span class="badge">ХІТ</span>
+                    <p>
+                        Найяскравішою зіркою нічного неба
+                        <em>(не рахуючи Сонця)</em> є
+                        <strong class="highlight">Сіріус</strong> -
+                        вона розташована у сузір'ї Великого Пса.
+                        Друге місце займає Канопус, а третє -
+                        Альфа Центавра, найближча до нас зоряна система.
+                    </p>
 
-        <section class="card">
-            <h2 class="section-title">Список найяскравіших зірок</h2>
-            <ol>
-                <li>Сіріус (сузір'я Великий Пес)</li>
-                <li>Канопус (сузір'я Кіль)</li>
-                <li>Альфа Центавра (сузір'я Центавр)</li>
-                <li>Арктур (сузір'я Волопас)</li>
-                <li>Вега (сузір'я Ліра)</li>
-            </ol>
-        </section>
+                    <div class="main-img">
+                        <img src="Sirius.jpeg" alt="Сіріус у порівнянні з Сонцем">
+                    </div>
+                </article>
+            </section>
 
-        <section class="card">
-            <h3 class="section-title">Зірки також поділяються на спектральні класи</h3>
-            <ul>
-                <li>O (Синій)</li>
-                <li>B (Біло-блакитний)</li>
-                <li>A (Від біло-блакитного до білого)</li>
-                <li>F (Білий)</li>
-                <li>G (Жовто-білий)</li>
-                <li>K (Жовто-помаранчевий)</li>
-                <li>M (Помаранчево-червоний)</li>
-            </ul>
-        </section>
+            <section id="star-list">
+                <h2 class="section-title">Список найяскравіших зірок</h2>
+                <article class="card">
+                    <ol>
+                        <li>Сіріус (сузір'я Великий Пес)</li>
+                        <li>Канопус (сузір'я Кіль)</li>
+                        <li>Альфа Центавра (сузір'я Центавр)</li>
+                        <li>Арктур (сузір'я Волопас)</li>
+                        <li>Вега (сузір'я Ліра)</li>
+                    </ol>
+                </article>
+            </section>
 
-        <section class="card" id="table">
-            <h2 class="section-title">Порівняльна таблиця</h2>
-            <table>
-                <tr>
-                    <th>№</th>
-                    <th>Зірка</th>
-                    <th>Видима зоряна величина</th>
-                    <th>Відстань (св. роки)</th>
-                    <th>Спектральний клас</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Сіріус</td>
-                    <td>-1,46</td>
-                    <td>8,6</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Канопус</td>
-                    <td>-0,74</td>
-                    <td>310</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Альфа Центавра</td>
-                    <td>-0,27</td>
-                    <td>4,34</td>
-                    <td>G</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Арктур</td>
-                    <td>-0,05</td>
-                    <td>36,7</td>
-                    <td>K</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Вега</td>
-                    <td>0,03</td>
-                    <td>25</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Капелла</td>
-                    <td>0,08</td>
-                    <td>42,2</td>
-                    <td>K</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Рігель</td>
-                    <td>0,13</td>
-                    <td>860</td>
-                    <td>B</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Проціон</td>
-                    <td>0,38</td>
-                    <td>11,4</td>
-                    <td>F</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Ахернар</td>
-                    <td>0,46</td>
-                    <td>139</td>
-                    <td>B</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Бетельгейзе</td>
-                    <td>0,50</td>
-                    <td>550</td>
-                    <td>M</td>
-                </tr>
-            </table>
+            <section id="spectral-classes">
+                <h2 class="section-title">Спектральні класи зірок</h2>
+                <article class="card">
+                    <ul>
+                        <li>O (Синій)</li>
+                        <li>B (Біло-блакитний)</li>
+                        <li>A (Від біло-блакитного до білого)</li>
+                        <li>F (Білий)</li>
+                        <li>G (Жовто-білий)</li>
+                        <li>K (Жовто-помаранчевий)</li>
+                        <li>M (Помаранчево-червоний)</li>
+                    </ul>
+                </article>
+            </section>
 
-            <p>
-                Детальніше про список можна почитати на
-                <a href="https://uk.wikipedia.org/wiki/Список_найяскравіших_зір">
-                    Вікіпедії
-                </a>
-            </p>
-        </section>
+            <section id="table">
+                <h2 class="section-title">Порівняльна таблиця</h2>
+                <article class="card">
+                    <table>
+                        <tr>
+                            <th>№</th>
+                            <th>Зірка</th>
+                            <th>Видима зоряна величина</th>
+                            <th>Відстань (св. роки)</th>
+                            <th>Спектральний клас</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Сіріус</td>
+                            <td>-1,46</td>
+                            <td>8,6</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Канопус</td>
+                            <td>-0,74</td>
+                            <td>310</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Альфа Центавра</td>
+                            <td>-0,27</td>
+                            <td>4,34</td>
+                            <td>G</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Арктур</td>
+                            <td>-0,05</td>
+                            <td>36,7</td>
+                            <td>K</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Вега</td>
+                            <td>0,03</td>
+                            <td>25</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Капелла</td>
+                            <td>0,08</td>
+                            <td>42,2</td>
+                            <td>K</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Рігель</td>
+                            <td>0,13</td>
+                            <td>860</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Проціон</td>
+                            <td>0,38</td>
+                            <td>11,4</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Ахернар</td>
+                            <td>0,46</td>
+                            <td>139</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Бетельгейзе</td>
+                            <td>0,50</td>
+                            <td>550</td>
+                            <td>M</td>
+                        </tr>
+                    </table>
 
-        <section class="card" id="gallery">
-            <h2 class="section-title">Галерея зірок</h2>
+                    <p>
+                        Детальніше про список можна почитати на
+                        <a href="https://uk.wikipedia.org/wiki/Список_найяскравіших_зір">
+                            Вікіпедії
+                        </a>
+                    </p>
+                </article>
+            </section>
 
-            <div class="grid-gallery">
-                <img src="Arcturus.jpeg" alt="Арктур">
-                <img src="Vega.jpeg" alt="Вега">
-                <img src="Procion.jpeg" alt="Проціон">
-                <img src="Betelgeuse.jpg" alt="Бетельгейзе">
-            </div>
-        </section>
-    </div>
+            <section id="gallery">
+                <h2 class="section-title">Галерея зірок</h2>
+                <article class="card">
+                    <div class="grid-gallery">
+                        <img src="Arcturus.jpeg" alt="Зоря Арктур">
+                        <img src="Vega.jpeg" alt="Зоря Вега">
+                        <img src="Procyon.jpeg" alt="Зоря Проціон">
+                        <img src="Betelgeuse.jpg" alt="Зоря Бетельгейзе">
+                    </div>
+                </article>
+            </section>
+
+        </div>
+    </main>
 
     <footer class="footer">
         <p>© 2026 Найяскравіші зорі</p>
+        <p>Навчальна дисципліна: Основи Web-розробки</p>
+        <p>Контакт:
+            <a href="mailto:denys.s.kaniuha@ukd.edu.ua">
+                denys.s.kaniuha@ukd.edu.ua
+            </a>
+        </p>
     </footer>
 
-    <a href="#" class="back-to-top">↑</a>
+    <a href="#top" class="back-to-top" aria-label="Повернутися на початок сторінки">↑</a>
+
 </body>
 
 </html>
