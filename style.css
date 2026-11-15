@@ -266,3 +266,90 @@ footer {
     border-radius: 6px;
     color: #333;
 }
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #13082c;
+    border: 1px solid #524275;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #dbe6ff;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]),
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #524275;
+    border-radius: 6px;
+    background-color: #02091a;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #9ba9c5;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #ffd479;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 212, 121, 0.2);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form p {
+    margin-bottom: 10px;
+    color: #dbe6ff;
+    font-weight: 600;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    accent-color: #ffd479;
+    cursor: pointer;
+}
+
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    display: inline-block;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #ffd479;
+    color: #170b44;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #9fd8ff;
+}
